@@ -2,7 +2,7 @@
 
 ## Usage questions
 
-Use [GitHub Discussions](https://github.com/cerncaycisi/scalvin/discussions)
+Use [GitHub Discussions](https://github.com/gokhanng/scalvin/discussions)
 for public usage and design questions. Use synthetic examples only.
 
 ## Bugs
@@ -13,7 +13,7 @@ personal data.
 
 ## Security or safety bypasses
 
-Use [private vulnerability reporting](https://github.com/cerncaycisi/scalvin/security/advisories/new).
+Use [private vulnerability reporting](https://github.com/gokhanng/scalvin/security/advisories/new).
 Do not open a public issue first.
 
 ## Personal or crisis support

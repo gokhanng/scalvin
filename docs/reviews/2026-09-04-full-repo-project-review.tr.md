@@ -1,7 +1,7 @@
 # Scalvin — tam repo ve proje incelemesi
 
 **İnceleme tarihi:** 4 Eylül 2026  
-**İncelenen repo:** [cerncaycisi/scalvin](https://github.com/cerncaycisi/scalvin)  
+**İncelenen repo:** [gokhanng/scalvin](https://github.com/gokhanng/scalvin)
 **Ana referans:** main, `e59afe5cdd6b58f4b14f7d6827520169e2e96b79`  
 **Güncel çalışma:** PR #13, `claude/roadmap-review-3y93ex`, `07cb94e484829610bc8f8fc689b07e8b1176e805`
 
@@ -58,7 +58,7 @@ Bu sayılar ürün başarısı veya test kapsam yüzdesi değildir. Repo küçü
 
 Paket sürümünün `1.0.0` olması “kararlı 1.0 yayımlandı” şeklinde yorumlanmamalı. Manifest ve yayın belgeleri geliştirme durumunu daha açık anlatıyor. Kullanıcıya görünen sürüm adlandırmasının bu önizleme durumuyla daha uyumlu olması faydalı olur.
 
-Kaynaklar: [package.json](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/package.json), [manifest](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/manifest.json), [PR #13](https://github.com/cerncaycisi/scalvin/pull/13), [NOTICE](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/NOTICE.md).
+Kaynaklar: [package.json](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/package.json), [manifest](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/manifest.json), [PR #13](https://github.com/gokhanng/scalvin/pull/13), [NOTICE](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/NOTICE.md).
 
 ## 4. Mimari: sağlam olan taraflar
 
@@ -72,7 +72,7 @@ Silme ve etkinleştirme sonrası kısmi başarının kullanıcıya doğru bildir
 
 Bunun sınırı: işbirlikçi kilit ve dosya kontrolleri bütün yerel saldırganları dışlayan bir işletim sistemi sınırı değildir. İstisna yakalama/geri alma testleri de süreç zorla öldürüldüğünde veya güç kesildiğinde kurtarmanın tamamını kanıtlamaz.
 
-Kaynak: [dosya işlemleri ve etkinleştirme](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/fs-safe.js).
+Kaynak: [dosya işlemleri ve etkinleştirme](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/fs-safe.js).
 
 ### 4.2 Belleğin kökenini veri modeline koyması
 
@@ -80,7 +80,7 @@ Bir ifadenin kaynağı, ilk görülme zamanı, canlı kullanıcı doğrulaması,
 
 Bu, Scalvin'in ürün çekirdeği olmaya aday. İyi bir süreklilik sistemi çok şey hatırlayan sistemden ziyade **neyi, kimin söylediğini, ne zaman doğrulandığını ve artık kullanılıp kullanılmaması gerektiğini bilen sistemdir.** Aşağıdaki düzeltme hatası da tam bu nedenle önemlidir.
 
-Kaynak: [bellek kökeni protokolü](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/MEMORY-PROVENANCE.md).
+Kaynak: [bellek kökeni protokolü](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/MEMORY-PROVENANCE.md).
 
 ### 4.3 İzin, saklama ve yedekleme
 
@@ -90,7 +90,7 @@ Bellek, transkript, kaynak, kullanım kayıtları ve bağlam grafiği gibi alanl
 
 **Yerel çalışma alanının kendisi düz metin dosyalar içerir. Şifreli yedek özelliği, çalışan tüm alanın şifreli olduğu anlamına gelmez.** Ayrıca Scalvin'in transkript kaydını kapatmak, model istemcisinin kendi oturum kaydını otomatik olarak kapatmaz.
 
-Kaynaklar: [veri ve izin protokolü](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/DATA-AND-CONSENT.md), [yedek kriptografisi](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/backup-crypto.js), [Claude Code oturum kayıtları](https://code.claude.com/docs/en/sessions).
+Kaynaklar: [veri ve izin protokolü](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/DATA-AND-CONSENT.md), [yedek kriptografisi](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/backup-crypto.js), [Claude Code oturum kayıtları](https://code.claude.com/docs/en/sessions).
 
 ### 4.4 Tedarik zinciri ve dürüst sürüm engelleri
 
@@ -131,7 +131,7 @@ Bu incelemede dört resmî sayfaya erişildi; yayımlanan CA, TR ve US iletişim
 
 Testlerde de iki ayrı görev olmalı: sabit saat ve sentetik güncel/eski veriyle deterministik davranış testleri; gerçek tarihe bakan bağımsız tazelik kapısı. Tek zaman aşımının kurulum, dil tercihi ve zaman aşımı testlerinin birçoğunu aynı anda bozması bakım maliyetini artırıyor. Testleri yeşile boyamak için tarihi gizlemek de doğru çözüm değildir.
 
-Kaynaklar: [kayıt](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/hooks/emergency-resources.json), [hook erken dönüşü](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/hooks/safety-net.cjs#L400-L421), [issue #12](https://github.com/cerncaycisi/scalvin/issues/12). Resmî doğrulama sayfaları: [Kanada](https://www.canada.ca/en/public-health/services/suicide-prevention/warning-signs.html), [Türkiye 112](https://www.112.gov.tr/), [ABD 911](https://www.911.gov/calling-911/frequently-asked-questions/), [ABD 988](https://988lifeline.org/).
+Kaynaklar: [kayıt](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/hooks/emergency-resources.json), [hook erken dönüşü](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/hooks/safety-net.cjs#L400-L421), [issue #12](https://github.com/gokhanng/scalvin/issues/12). Resmî doğrulama sayfaları: [Kanada](https://www.canada.ca/en/public-health/services/suicide-prevention/warning-signs.html), [Türkiye 112](https://www.112.gov.tr/), [ABD 911](https://www.911.gov/calling-911/frequently-asked-questions/), [ABD 988](https://988lifeline.org/).
 
 ### F2 — İşlem doğrulaması güçlü; insan onayı ve izolasyon tamamlanmış değil
 
@@ -149,7 +149,7 @@ Mutasyon önizlemesinde üretilen onay belirteci aynı çağırana döndürülü
 
 **Öneri.** Önce tek istemci/işletim sistemi/sürüm bileşimi seçilmeli. Gerçek başlatma sonrasında shell, dosya, ağ, dış araçlar, kullanıcı ayarları, oturum kayıtları ve onay olayları ölçülmeli. İşlem belirteci ile kullanıcı iradesi ayrı kanıtlar olarak tutulmalı. İstemci onayı yoksa hassas mutasyon yolu kapalı kalmalı. Genel adaptör için önizleme sınırı açık biçimde korunmalı.
 
-Kaynaklar: [onay belirteci](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/mcp-server.js#L175-L217), [broker self-test](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/mcp-server.js#L1411-L1425), [supervisor](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/session-supervisor.js).
+Kaynaklar: [onay belirteci](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/mcp-server.js#L175-L217), [broker self-test](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/mcp-server.js#L1411-L1425), [supervisor](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/session-supervisor.js).
 
 ### F3 — Yayın disiplini belgede var; ana dalda zorunlu değil
 
@@ -159,7 +159,7 @@ Kaynaklar: [onay belirteci](https://github.com/cerncaycisi/scalvin/blob/e59afe5c
 
 **Öneri.** Ana dalda PR zorunluluğu, gereken kontroller, force-push ve silme kısıtları uygulanmalı; istisna yetkileri bilinçli seçilmeli. Sürüm etiketi ve yayın kimliği korumaları ayrıca kurulmalı. Kabul ölçütü, ayar belgesi yazılması değil, başarısız denetimli değişikliğin gerçekten birleştirilemediğinin görülmesi olmalı.
 
-Kaynaklar: [dallar API'si](https://api.github.com/repos/cerncaycisi/scalvin/branches), [ruleset API'si](https://api.github.com/repos/cerncaycisi/scalvin/rulesets?includes_parents=true), [yayın kuralları](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/RELEASING.md). API gözlemleri 4 Eylül 2026'ya aittir; bağlantılar zaman içinde değişebilir.
+Kaynaklar: [dallar API'si](https://api.github.com/repos/gokhanng/scalvin/branches), [ruleset API'si](https://api.github.com/repos/gokhanng/scalvin/rulesets?includes_parents=true), [yayın kuralları](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/RELEASING.md). API gözlemleri 4 Eylül 2026'ya aittir; bağlantılar zaman içinde değişebilir.
 
 ### F4 — Yeni düzeltme, eski doğrulama metadata'sıyla kalıyor
 
@@ -171,7 +171,7 @@ Kaynaklar: [dallar API'si](https://api.github.com/repos/cerncaycisi/scalvin/bran
 
 **Öneri.** Düzeltme ve canlı doğrulama ortak bir durum geçişi kullanmalı. Tarih, varsa gerçek aktif oturum, revizyon ve inceleme alanları aynı işlemde tutarlı güncellenmeli. Oturum dışı düzeltmeler için açık bir politika olmalı; var olmayan oturum kimliği uydurulmamalı. Kabul testi, sadece metin değişimini değil hemen sonraki `dueState` sonucunu da doğrulamalı.
 
-Kaynaklar: [düzeltme planı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/memory-data.js#L783-L814), [işlem çağrısı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/operations.js#L4045-L4060), [inceleme hesabı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/memory-review.js), [canlı doğrulama kuralı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/MEMORY-PROVENANCE.md#L65-L75).
+Kaynaklar: [düzeltme planı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/memory-data.js#L783-L814), [işlem çağrısı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/operations.js#L4045-L4060), [inceleme hesabı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/memory-review.js), [canlı doğrulama kuralı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/MEMORY-PROVENANCE.md#L65-L75).
 
 ### F5 — Çıktı sınırı hatası dönerken işçi çalışmaya devam edebiliyor
 
@@ -183,7 +183,7 @@ Kaynaklar: [düzeltme planı](https://github.com/cerncaycisi/scalvin/blob/e59afe
 
 **Öneri.** Çıktı taşması ve zaman aşımı aynı sonlandırma yordamından geçmeli: nazik sonlandırma, sonlu bekleme, zorla sonlandırma, çıkışın doğrulanması ve kaynak temizliği. Alt süreç ağacı ve Windows davranışı ayrıca düşünülmeli. Tek bir SIGTERM çağrısını test etmek yeterli değildir.
 
-Kaynak: [sınırlı istemci çalıştırma](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/client-launcher.js#L201-L239).
+Kaynak: [sınırlı istemci çalıştırma](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/client-launcher.js#L201-L239).
 
 ### F6 — İmzalı kaynak önerisi, kaynağın okunmuş olmasını kanıtlamıyor
 
@@ -195,7 +195,7 @@ Kaynak: [sınırlı istemci çalıştırma](https://github.com/cerncaycisi/scalv
 
 **Öneri.** Okunan aralıklar kaydedilmeli; öneriler kaynak revizyonu yanında sınırlı alıntı/konum kanıtı taşımalı. Beklenen okuma kapsamı tamamlanmadan dolu öneri kabul edilmemesi düşünülmeli. Bunun da anlamsal doğruluğu tek başına garanti etmeyeceği açık kalmalı. Nihai entegrasyonun ayrı, sınırlı ve kullanıcı kontrollü olması korunmalı.
 
-Kaynak: [işçi araçları ve imzalama](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/source-worker.js#L245-L310).
+Kaynak: [işçi araçları ve imzalama](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/source-worker.js#L245-L310).
 
 ### F7 — Alt süreç ortamı gereğinden geniş
 
@@ -207,7 +207,7 @@ Kaynak: [işçi araçları ve imzalama](https://github.com/cerncaycisi/scalvin/b
 
 **Öneri.** İşçi ve etkileşimli ana istemci için ayrı, gerekçeli ortam politikaları tanımlanmalı. Sağlayıcı kimlik doğrulaması için gerçekten gereken değişkenler açıkça taşınmalı; ilgisiz anahtarlar ve davranış değiştiren seçenekler varsayılan olarak aktarılmamalı. İsim “temiz” olduğu için davranışın asgari yetki sağladığı varsayılmamalı.
 
-Kaynaklar: [işçi ortamı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/client-launcher.js#L193-L206), [ana istemci ortamı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/session-supervisor.js#L15-L19).
+Kaynaklar: [işçi ortamı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/client-launcher.js#L193-L206), [ana istemci ortamı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/session-supervisor.js#L15-L19).
 
 ### F8 — Küçük işlem, büyük arşivin maliyetini ödüyor
 
@@ -225,7 +225,7 @@ Bunlar tek makinedeki mikro ölçümlerdir; üretim gecikmesi, p95 veya genel pe
 
 **Öneri.** Önce hedef boyut ve gecikme bütçesi konmalı. Kontrol durumu, bellek ve büyük kaynak arşivlerinin değişim alanları ayrılmalı; doğrulanmış hash dizini, dosya kapsamlı işlem günlüğü veya kopyalama optimizasyonu değerlendirilmeli. Daha büyük ölçekte veritabanı + insan tarafından okunabilir dışa aktarım düşünülebilir. Güvenlik kontrollerini ölçüsüzce kaldırmak doğru çözüm değildir.
 
-Kaynaklar: [bağlam yükleme ve işlem](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/operations.js#L1867-L1920), [özet ve etkinleştirme](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/fs-safe.js#L804-L920).
+Kaynaklar: [bağlam yükleme ve işlem](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/operations.js#L1867-L1920), [özet ve etkinleştirme](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/lib/fs-safe.js#L804-L920).
 
 ## 7. Ürün, konuşma kalitesi ve bakım değerlendirmesi
 
@@ -237,7 +237,7 @@ Geniş protokol hacmi daha iyi davranışı otomatik olarak sağlamaz. Kurallar�
 
 Önerim güvenlik ve izin çekirdeğini koruyup kalan talimatları olayla yüklenen kısa modüllere taşımak; protokollerin aynı bilgiyi kaç yerde tekrarladığını azaltmak; her dosyanın ana konuşmaya katkısını deneyle görmek. Yeni “davranış katmanı” eklemeden önce mevcut yükün sonuç kalitesine etkisini ölçmek daha değerli.
 
-Kaynak: [oturum başlangıç akışı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/START-SESSION.md).
+Kaynak: [oturum başlangıç akışı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/runtime/START-SESSION.md).
 
 ### F10 — Değerlendirme altyapısı var; gerçek davranış kanıtı onun gerisinde
 
@@ -259,7 +259,7 @@ Bağımsız insan değerlendirmesi ve gerçek aday/istemci/model bağlantılı k
 
 “Destekleyici hissettirdi” ile “klinik fayda gösterildi” ayrı iddialardır. Erken ürün deneyi önce kullanılabilirlik ve veri denetimi iddialarını sınamalı.
 
-Kaynak: [yanıt değerlendirme kodu](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/evaluate-captured-responses.js#L469-L502).
+Kaynak: [yanıt değerlendirme kodu](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/cli/evaluate-captured-responses.js#L469-L502).
 
 ### F11 — Node destek aralığı güncellenmeli
 
@@ -267,7 +267,7 @@ Paket `node >=20.0.0` kabul ediyor ve CI Node 20'yi içeriyor. İnceleme tarihin
 
 Öneri: desteklenen LTS hatlarını açıkça belirtmek; minimum sürümü, manifesti, kurulum belgelerini ve CI'ı birlikte güncellemek. “En az 20” gibi açık uçlu ifade ile hangi sürümlerin gerçekten desteklendiği arasında fark bırakmamak.
 
-Kaynaklar: [paket motor aralığı](https://github.com/cerncaycisi/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/package.json#L12-L14), [resmî Node sürümleri](https://nodejs.org/en/about/previous-releases), [EOL politikası](https://nodejs.org/en/about/eol).
+Kaynaklar: [paket motor aralığı](https://github.com/gokhanng/scalvin/blob/e59afe5cdd6b58f4b14f7d6827520169e2e96b79/package.json#L12-L14), [resmî Node sürümleri](https://nodejs.org/en/about/previous-releases), [EOL politikası](https://nodejs.org/en/about/eol).
 
 ### F12 — Kontrol zenginliği, kullanıcı kontrolüne dönüşmeli
 
@@ -326,9 +326,9 @@ Kararlı yayın kapısının sekiz engeli: eski kaynak kaydı; generic adaptör�
 
 PR #13 çalışma kopyasında sözdizimi, manifest, paket envanteri, bağlantı ve public-repo kontrolleri geçti; gerçek tarihli acil kaynak kontrolü yine başarısız. Değişen CodeQL iş akışı kuralları ve kaynak denetimi için hedefli **11/11 test geçti**.
 
-GitHub'da PR'nin 1 Eylül tarihli [CI çalışması](https://github.com/cerncaycisi/scalvin/actions/runs/33483860192) başarısız. Yedi platform/Node işinin tümü statik/depo kontrolü aşamasında durmuş; sonraki test ve paket adımları atlanmış. Python ve CodeQL işleri geçmiş. Bu, o CI çalışmasının bütün platformlarda runtime testlerini tamamladığı anlamına gelmiyor.
+GitHub'da PR'nin 1 Eylül tarihli [CI çalışması](https://github.com/gokhanng/scalvin/actions/runs/33483860192) başarısız. Yedi platform/Node işinin tümü statik/depo kontrolü aşamasında durmuş; sonraki test ve paket adımları atlanmış. Python ve CodeQL işleri geçmiş. Bu, o CI çalışmasının bütün platformlarda runtime testlerini tamamladığı anlamına gelmiyor.
 
-Ana dalın 3 Eylül tarihli [zamanlanmış CodeQL işi](https://github.com/cerncaycisi/scalvin/actions/runs/33731142757) başarılı. Güncel code-scanning alert envanteri incelenmedi; bu başarıdan “sıfır güvenlik açığı” sonucu çıkarılmadı.
+Ana dalın 3 Eylül tarihli [zamanlanmış CodeQL işi](https://github.com/gokhanng/scalvin/actions/runs/33731142757) başarılı. Güncel code-scanning alert envanteri incelenmedi; bu başarıdan “sıfır güvenlik açığı” sonucu çıkarılmadı.
 
 ## 9. PR #13 için özel yorum
 
@@ -344,7 +344,7 @@ Sınırı: eski kaynak kaydı aynı kalıyor. Dolayısıyla mevcut bozuk davran�
 
 **Kanaatim:** Faydalı bakım PR'si; toparlanmanın tamamı değil. Kaynak doğrulaması ve somut çalışma zamanı düzeltmeleri ayrı, küçük ve test edilebilir değişikliklerle takip edilmeli. Geniş yol haritası, en acil çalışan kod sorunlarını gölgelememeli.
 
-Kaynak: [PR #13 farkı ve tartışması](https://github.com/cerncaycisi/scalvin/pull/13).
+Kaynak: [PR #13 farkı ve tartışması](https://github.com/gokhanng/scalvin/pull/13).
 
 ## 10. Projenin konumlandırılması: asıl değer nerede?
 

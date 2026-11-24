@@ -21,7 +21,7 @@ not professional care or a crisis service.
 1. Clone and enter the public source repository:
 
    ```bash
-   git clone https://github.com/cerncaycisi/scalvin.git
+   git clone https://github.com/gokhanng/scalvin.git
    cd scalvin
    ```
 

@@ -1,7 +1,7 @@
 # Scalvin
 
-[![CI](https://github.com/cerncaycisi/scalvin/actions/workflows/ci.yml/badge.svg)](https://github.com/cerncaycisi/scalvin/actions/workflows/ci.yml)
-[![Security](https://img.shields.io/badge/security-private%20reporting-blue)](https://github.com/cerncaycisi/scalvin/security/advisories/new)
+[![CI](https://github.com/gokhanng/scalvin/actions/workflows/ci.yml/badge.svg)](https://github.com/gokhanng/scalvin/actions/workflows/ci.yml)
+[![Security](https://img.shields.io/badge/security-private%20reporting-blue)](https://github.com/gokhanng/scalvin/security/advisories/new)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Scalvin is a local-first, therapy-inspired AI companion for self-reflection,
@@ -72,7 +72,7 @@ sensitive material.
 Requirements: Git and Node.js 22 or newer (an active or maintenance LTS line: 22 or 24).
 
 ```bash
-git clone https://github.com/cerncaycisi/scalvin.git
+git clone https://github.com/gokhanng/scalvin.git
 cd scalvin
 ```
 

@@ -28,7 +28,7 @@ before opening a PR.
 Requirements: Git and Node.js 22 or newer (an active or maintenance LTS line: 22 or 24).
 
 ```bash
-git clone https://github.com/cerncaycisi/scalvin.git
+git clone https://github.com/gokhanng/scalvin.git
 cd scalvin
 npm ci --ignore-scripts
 npm test
@@ -147,5 +147,5 @@ The script deletes only untracked metadata noise and skips tracked files.
 
 Follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Report vulnerabilities or
 safety bypasses through
-[private vulnerability reporting](https://github.com/cerncaycisi/scalvin/security/advisories/new),
+[private vulnerability reporting](https://github.com/gokhanng/scalvin/security/advisories/new),
 not a public issue.

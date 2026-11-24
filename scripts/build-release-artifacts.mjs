@@ -22,7 +22,7 @@ import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const REPOSITORY = 'https://github.com/cerncaycisi/scalvin';
+const REPOSITORY = 'https://github.com/gokhanng/scalvin';
 
 function fail(message) {
   throw new Error(message);

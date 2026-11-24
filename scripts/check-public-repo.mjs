@@ -29,7 +29,7 @@ const tracked = execFileSync(
 const errors = [];
 const maximumScannableBytes = 8_000_000;
 const mutableMainTrustRoot =
-  ["raw.githubusercontent.com", "cerncaycisi", "scalvin", "main"].join("/") +
+  ["raw.githubusercontent.com", "gokhanng", "scalvin", "main"].join("/") +
   "/";
 
 const forbiddenTrackedPaths = [
