@@ -27,10 +27,10 @@ both people and their private data.
 ## Reporting
 
 For an ordinary conduct problem, open a public
-[contact request](https://github.com/cerncaycisi/scalvin/issues/new) containing
+[contact request](https://github.com/gokhanng/scalvin/issues/new) containing
 only a request for a private maintainer channel—no incident details, personal
 data, screenshots, or identifying material. Report vulnerabilities and safety bypasses through
-[GitHub private vulnerability reporting](https://github.com/cerncaycisi/scalvin/security/advisories/new).
+[GitHub private vulnerability reporting](https://github.com/gokhanng/scalvin/security/advisories/new).
 Do not include real user material in any report.
 
 Maintainers may edit, hide, lock, or remove content and may restrict

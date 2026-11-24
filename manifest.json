@@ -5,7 +5,7 @@
     "name": "scalvin",
     "version": "1.0.0",
     "minimumNode": ">=22.0.0",
-    "repository": "https://github.com/cerncaycisi/scalvin"
+    "repository": "https://github.com/gokhanng/scalvin"
   },
   "release": {
     "channel": "development",

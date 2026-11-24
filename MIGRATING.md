@@ -215,4 +215,4 @@ Restore a pre-update backup to a separate path instead.
 
 Use synthetic metadata and error codes in public issues. Never attach a real
 workspace. Security, privacy, or safety-bypass reports belong in
-[private vulnerability reporting](https://github.com/cerncaycisi/scalvin/security/advisories/new).
+[private vulnerability reporting](https://github.com/gokhanng/scalvin/security/advisories/new).
